@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --yellow: #ffcd5f;
+    --black: #050306;
+    --red: #d96431;
+    --blue: #2989e7;
+    --light-blue: #9fccff;
+    --text-color: #d3d1d4;
+  }
+  
+  .main {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  /* Styling first section */
+  .Home_section {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+  }
+  
+  .home_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home_content .content {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 7%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 40vh;
+  }
+  
+  h1.stayIn {
+    font-size: 4em;
+    font-weight: 700;
+    color: var(--black);
+  }
+  
+  .content p.para {
+    font-size: 30px;
+    margin-left: -8px;
+    color: var(--text-color);
+  }
+  
+  span.safe {
+    font-size: 50px;
+    color: var(--red);
+  }
+  
+  .home_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home_image img {
+    width: 60%;
+    object-fit: contain;
+  }
+  
+  /* [class^="home_"] {
+    border: 2px solid black;
+  } */
+  
+  .button {
+    display: grid;
+    width: 30%;
+    height: 60px;
+    color: white;
+    font-size: 1.135em;
+    border-radius: 50px;
+    place-items: center;
+    background: var(--blue);
+  }
+  
+  /* Home section styling complete */
+  
+  /* Section section styling  */
+  
+  .stayhome_content_section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .stayhome_image > img {
+    height: 400px;
+    object-fit: contain;
+  }
+  
+  .stayhome_content .stayIn {
+    font-size: 2em;
+  }
+  
+  .stayhome_content .safe {
+    font-size: 3em;
+    color: var(--blue);
+  }
+  
+  /* skill section styling */
+  
+  .skill {
+    position: relative;
+    height: 90vh;
+  }
+  
+  .todo {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .todo_content {
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    margin: 2%;
+    text-align: center;
+    /* background: coral; */
+  }
+  
+  .todo_content > h1 {
+    color: var(--red);
+  }
+  
+  .todo_cards {
+    width: 100%;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    margin-top: 4%;
+  }
+  
+  .card {
+    width: 80%;
+    height: 60vh;
+    margin-left: 7%;
+    box-shadow: 7px 13px 17px 3px rgba(164, 159, 159, 0.75);
+  }
+  
+  .card_image {
+    background: var(--yellow);
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .todo_skill .skill {
+    background: var(--light-blue);
+  }
+  
+  .card_image > img {
+    width: 300px;
+  }
+  
+  .card_content {
+    height: 25vh;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .card_content .largetext {
+    font-size: 2em;
+    font-weight: 700;
+  }
+  
+  .card_content .smallText {
+    font-size: 1.25em;
+    color: var(--text-color);
+  }
+  
+  .icon {
+    width: 90%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  
+  .icon > .arrow {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--text-color);
+  }
+  
+  /* Download section styling */
+  .download_section {
+    position: relative;
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    background: var(--yellow);
+  }
+  
+  .download_content {
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .download_content_text .largetext {
+    font-size: 3em;
+    font-weight: 500;
+  }
+  
+  .download_content_text img {
+    width: 40%;
+  }
+  
+  .download_content_text .smalltext {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  
+  .download_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .download_image img {
+    width: 50%;
+  }
+  
+  footer {
+    position: relative;
+    bottom: 0;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .logo_heading {
+    margin-top: 2%;
+  }
+  
+  .footer_list {
+    width: 100%;
+  }
+  
+  .footer_list .active {
+    color: var(--red);
+  }
+  
+  .footer_list > ul {
+    /* background: rgb(187, 187, 201); */
+    display: flex;
+    font-size: 1.5em;
+    justify-content: space-evenly;
+    list-style: none;
+    font-weight: 500;
+  }
+  
+  /* Section 2 styling */
+  
+  .stayHome__section {
+    grid-column: 1;
+    height: 90%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .bg-wht {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "n h b";
+  }
+  
+  .image {
+    grid-area: n;
+  }
+  .image img {
+    margin: 50px;
+    width: 200px;
+    place-content: center;
+  }
+  .heading {
+    grid-area: h;
+  }
+  .heading h3 {
+    margin-left: -80px;
+    margin-top: 40px;
+    font-size: 1.75em;
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    line-height: 30px;
+  }
+  .heading h3 span {
+    color: blueviolet;
+  }
+  .bullets {
+    display: grid;
+    grid-area: b;
+    grid-column: 3/5;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "num pra";
+    margin-top: 80px;
+    margin-left: -55px;
+  }
+  .numbers {
+    grid-area: num;
+    display: grid;
+    font-size: 1.6em;
+    font-weight: bolder;
+    color: red;
+    gap: 5px;
+  }
+  .para {
+    grid-area: pra;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-left: -350px;
+  }
+  .para ul {
+    display: grid;
+    gap: 35px;
+  }
+  .para ul p {
+    font-size: 20px;
+  }
